@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>這是主頁</title>
+    <link rel="stylesheet" href="裝備球拍.css">
+</head>
+<body>
+    <header>
+        
+        <div><img src="鴨嘴獸.png" style="background-color:#F2E1D8;"></div>
+        <nav>
+                <a href="主頁.html">主頁</a>
+                <a href="基礎知識.html">基礎知識</a>
+                <a href="teach.html">教學</a>
+                <a href="場地.html">場地</a>
+                
+            
+        </nav>
+    </header>
+    <div class="another">
+    
+    <div class="boxs1"> <a class="box" href="ball.html">球類</a></div>
+    <div class="boxs2"> <a class="box" href="鞋子.html">鞋子</a></div>
+    <div class="boxs3"> <a href="衣服.html">衣服</a></div>
+    <div class="boxs4"> <a href="裝備球拍.html">球拍</a></div>
+    </div>
+    <h1>
+        羽毛球拍
+    </h1>
+    <a class="serch" href="#熱門">熱門</a>
+    <a class="serch" href="#品牌">品牌</a>
+    
+    
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h3 id="熱門">球拍大熱門</h3>
+      
+      <br>
+      <br>
+      <br>
+      <div class="container">
+        <div class="bo">
+            
+            <img class="pc" src="p12.png">
+            
+            <div class="click">
+                <a class="click1" href="product3.html?id=12"style="color:black">點擊進入</a>
+            </div>
+            <div id="brands" onclick="click1()">品牌</div>
+        </div>
+        <div class="bo">
+            <img class="pc" src="p13.png">
+            <div class="click">
+                <a class="click1" href="product3.html?id=13"style="color:black">點擊進入</a>
+            </div>
+        </div>
+        <div class="bo">
+            <img class="pc" src="p14.png">
+            <div class="click">
+                <a class="click1" href="product3.html?id=14"style="color:black">點擊進入</a>
+            </div>
+        </div>
+        </div>
+    
+      
+      <p id="品牌">各大品牌任你挑選!</p>
+      
+      
+      <div class="all">
+        <div class="slider-container" 
+        item-display-d="4"
+        item-display-t="3"
+        item-display-m="1"
+        
+        >
+            <div class="slider-width">
+                <div class="item">
+                    <img class="x" src="yonex.png"  >
+                    <div class="background-color"></div>
+                    <a class="url" href="https://www.yonex.com.tw/Product/c/%E7%BE%BD%E7%90%83%E6%8B%8D/27">前往網站</a>
+                </div>
+                <div class="item">
+                    <img class="x" src="victor.png"  >
+                    <div class="background-color"></div>
+                    <a class="url" href="https://www.victorsport.com.tw/product/rackets">前往網站</a>
+                </div>
+                <div class="item"><img class="x"src="exthree.png"  >
+                    <div class="background-color"></div>
+                    <a class="url" href="https://www.exthree.com.tw/product-bs01.php?p=1">前往網站</a>
+                </div>
+                <div class="item"><img class="x"src="decathon.png"  >
+                    <div class="background-color"></div>
+                    <a class="url" href="https://decathlon.tw/category-badminton?sport=339">前往網站</a>
+                </div>
+               
+                
+            </div>
+    
+        </div>
+   
+ 
+      <script>
+        var brand = document.getElementById('brand');
+        var brands = document.getElementsByClassName('brands');
+    
+        brands.onclick=function(){
+            brand.src=brands.src;
+            brands.textContent="brand";
+            }
+        
+    </script>
+</body>

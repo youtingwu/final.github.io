@@ -1,0 +1,307 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body{width:100%;
+  background-color: #027353;
+}
+
+header{
+  width:100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F2E1D8;
+  
+}
+header img{
+  background-color: aliceblue;
+  
+width: 100px;
+height: 97px;
+}
+nav{padding-top: 36px;
+  
+  margin-top:7px;
+  padding-right: 20px;
+  
+}
+nav a{
+
+color:#F05A28;
+padding: 10px;
+
+  text-align: center;
+text-decoration: none;
+font-weight: 700;
+
+}
+header a:hover{
+/* background-color:aliceblue; */
+color: #03A678;
+transition: 1s;
+font-size: 25px;
+}
+.about{
+  margin: 0;
+  justify-content: space-between;
+ 
+  max-width: 80%;
+border: solid 1px;
+
+}
+.title{
+  width: 100%;
+ 
+}
+h1{ color: #03A678;
+    font-size: 200px;
+    padding-top: 30px;
+    height:80.3px; 
+    position: relative;
+    left: 32px;
+    top: -308px;
+    width: 550px;
+}
+h2{font-size: 30px;
+  width: 250px;
+  padding-top: 30px;
+  /* background-color: aliceblue; */
+  height:80.3px; 
+  text-align: center;
+}
+.v img{
+    
+    width: 200px;
+    height: 251px;
+    /* position:absolute;
+    top: 111px; */
+    background-color: aquamarine;
+}
+.vedio{
+   
+    width: 250px;
+    height: 100px;
+}
+.content{
+    margin: 0px;
+}
+
+
+
+
+/* 下拉式選單 */
+
+.dropbtn {
+  position: fixed;
+  top: 260px;
+  left: 1229px;
+    width: 54px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  .dropdown {
+    position:relative;
+    display: inline-block;
+  }
+  
+  
+  .dropdown-content { 
+    display: none;
+    /* position:absolute; */
+    position: fixed;
+    top:330px;
+    left: 1121px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+ 
+  .dropdown-content a {
+   
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+     /* position: fixed;
+    top:150px; */
+  
+  }
+.page-size{
+  width: 90%;
+  position: relative;
+  left: 5%;
+}
+p{ font-size: 1em;
+  color: #F2E1D8 ;
+}
+h2{position: relative;
+  left: 10px;
+  color: #F05A28;
+  margin: 0;
+}
+.h3{
+  position: relative;
+  right: 10%;
+}
+.l{
+  width: 150px;
+  color: #F05A28;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  left:145px;
+}
+.box{
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
+}
+.boxs-1{
+  padding:10px;
+  background-color: #03A678;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 0;
+  width: 100%;
+}
+.boxs-2{
+  
+  width: 100%;
+}
+
+li{margin-left: 20px;max-width: 500px;margin: auto;}
+.p1{display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #F2E1D8;
+}
+.p2{
+  width: 50%;
+  
+  font-size: 1em;
+  color: #F2E1D8;
+ 
+}
+
+@media (max-width:500px) {
+  .box{
+    flex-wrap: wrap;
+  }
+.boxs-1{
+  width: 70%;
+}
+.boxs-2 iframe{
+  width: 100%;
+}
+}
+@media (max-width:400px) {
+  .i{
+    left: 139px;
+  }
+  .h2{
+    left: 10px;
+  }
+}
+
+
+
+/* @media(max-width:500px){
+header{
+  width:100%;
+}
+
+
+
+.navbar a{
+    margin: -5px;
+}
+
+.title{
+  width:80%;height:410px;position: relative;top:5%;
+}
+.p1{
+  width: 90%;
+  position: relative;
+  left: -7%;
+  margin: 0;
+}
+h1{
+  font-size: 11.8em;
+  width:100%;
+  position: relative;
+  left: -4%;
+  padding: 0;
+}
+.page-size{
+  width: 100%;
+  position: relative;
+  left: 10%;
+}
+.ul li p{
+  position: relative;
+  left: -2%;
+  width:35%;
+  text-align: center;
+  margin: 0;
+}
+.l{
+  position: relative;
+  left: 165px;
+}
+.box{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.boxs-1{
+width: 80%;
+position: relative;
+left: -39px;
+}
+.boxs-2 iframe{
+  max-width: 90%;
+  position: relative;
+  left: -6%;
+  }
+  .dropbtn{
+    position: fixed;
+    left: 10%;
+    top: 420%;
+  }
+  .dropdown-content{
+    position: fixed;
+    left: 60%;
+    top: 420%;
+  }
+  h2{
+    position: relative;
+    left:-21%;
+  }
+  .ul li p{
+    /* width: 35%; */
+  }
+} */

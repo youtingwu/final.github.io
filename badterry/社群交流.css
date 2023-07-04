@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.slider-container{
+    position: relative;
+    height: 200px;
+   overflow-x: hidden;
+}
+.slider-width{
+    border: solid 1px;
+   
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    transition: 0.4s ease-in-out;
+}
+.item{
+   background-color: aquamarine;
+   width: 400px;
+   height: 200px;
+} 
+ 

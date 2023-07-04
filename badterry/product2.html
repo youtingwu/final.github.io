@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product2.css">
+    <title>基礎知</title>
+</head>
+<body>
+   
+    <div class="all">
+        <header>
+        
+            <div><img src="鴨嘴獸.png" style="background-color:  #F2E1D8;"></div>
+            <nav class="nav">
+                
+                    <a href="主頁.html">主頁</a>
+                    <a href="teach.html">教學</a>
+                    
+                    
+                    <a href="場地.html">場地</a>
+                    <a href="ball.html">裝備</a>
+            </nav>
+            
+        </header>
+        <div class="container">
+            <div class="item-picture" >
+                <img src="yonex.png" id="picture"style="width: 70%;
+                ">
+            </div>
+            <div class="evaluate">
+                <div class="box-1" id="brand">exthree</div>
+                <div class="box-3" id="kind">cici</div>
+                <div class="box-4" id="money">cici</div>
+                <hr style="width: 100%;">
+                <div class="box-2" id="evaluate">評價:</div>
+            </div>
+        </div>
+        <div class="container-2">
+            <div class="item-1">
+                <img src="victor.png"class="item"style="width: 100%;
+                height: 100%;">
+            </div>
+            <div class="item-1">
+                <img src="topic1.png"class="item"style="width: 100%;
+                height: 100%;">
+            </div>
+            <div class="item-1">
+                <img src="yonex.png" class="item"style="width: 100%;
+                height: 100%;">
+            </div>
+        </div>
+    <script>
+        var picture = document.getElementById('picture');
+        var item = document.getElementsByClassName('item');
+    
+            item[0].onclick=function(){
+                picture.src=item[0].src;
+            }
+            item[1].onclick=function(){
+                picture.src=item[1].src;
+            }
+            item[2].onclick=function(){
+                picture.src=item[2].src;
+            }
+    
+    
+    
+    
+    
+            
+                // var evaluate=document.getElementById('evaluate');
+                // var brand=document.getElementById('brand');
+                // var click1=document.getElementsByClassName('click1');
+    
+                // click1.onclick=function(){
+                    
+                //     window.open ('ball.html')
+                  
+                
+                   
+                // }
+                
+    
+    
+    
+    //             var urlParams = new URLSearchParams(window.location.search);
+    // var message = urlParams.get('message');
+    // console.log(message); // 輸出：你好，世界！
+    var item = document.getElementsByClassName('item');
+    var brand=document.getElementById('brand');
+    var picture = document.getElementById('picture');
+    var kind=document.getElementById('kind');
+    var money=document.getElementById('money');
+    document.addEventListener("DOMContentLoaded",(event)=>{
+        let urlparams=new URLSearchParams(window.location.search);
+        let _id= urlparams.get('id')
+    
+        if (_id=='9') {
+            picture.src=src="p7.png";
+            brand.innerHTML="VICTQR";
+            kind.innerHTML="T-30012 C";
+            money.innerHTML="＄1480";
+            item[0].src=src="p8.png";
+            item[1].src=src="p7.png";
+            item[2].src=src="背景.png";
+        }
+        if (_id=='10') {
+            picture.src=src="p9.png";
+            brand.innerHTML="EXTHREE";
+            kind.innerHTML="T-11071";
+            money.innerHTML="＄1050";
+            item[0].src=src="p10.png";
+            item[1].src=src="p9.png";
+            item[2].src=src="背景.png";
+        }
+        if (_id=='11') {
+            picture.src=src="p11.png";
+            brand.innerHTML="YONEX";
+            kind.innerHTML="YOBT3004TR";
+            money.innerHTML="＄720";
+            item[0].src=src="p11.png";
+            item[1].src=src="背景.png";
+            item[2].src=src="背景.png";
+        }
+       
+    }
+    
+    )
+    </script>
+    </body>
+    </html>
+    
